@@ -1,14 +1,3 @@
-- id: pyrefly-typecheck
-  name: pyrefly-typecheck
-  description: "Run `pyrefly check` for the repository (managed install via PyPI, pinned by tag)."
-  entry: pyrefly check
-  language: python
-  types_or: [python, pyi]
-  pass_filenames: false
-  require_serial: true
-  stages: [pre-commit, pre-merge-commit, pre-push, manual]
-  additional_dependencies: ["pyrefly==0.29.1"]
-
 - id: pyrefly-typecheck-system
   name: pyrefly-typecheck-system
   description: "Run `pyrefly check` using the system-installed `pyrefly`."
@@ -19,8 +8,8 @@
   require_serial: true
   stages: [pre-commit, pre-merge-commit, pre-push, manual]
 
-- id: pyrefly-typecheck-flex
-  name: pyrefly-typecheck-flex
+- id: pyrefly-typecheck-specific-version
+  name: pyrefly-typecheck-specific-version
   description: "Run `pyrefly check` with user-specified version via additional_dependencies."
   entry: pyrefly check
   language: python
