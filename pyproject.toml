@@ -16,6 +16,3 @@ classifiers = [
 dependencies = [
     "pyrefly==0.29.2",
 ]
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
