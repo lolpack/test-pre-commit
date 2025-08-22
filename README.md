@@ -2,7 +2,7 @@
 
 A **pre-commit** hook for [Pyrefly](https://github.com/facebook/pyrefly).
 
-This repository provides three hooks:
+This repository provides two hooks:
 
 - `pyrefly-typecheck-specific-version` (installs a specific version of Pyrefly)
 - `pyrefly-typecheck-system` (uses an already-installed `pyrefly` on your PATH)
