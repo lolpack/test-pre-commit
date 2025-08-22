@@ -16,7 +16,6 @@ Add one of the following to your project's `.pre-commit-config.yaml`:
 ```yaml
 repos:
   - repo: https://github.com/facebook/pyrefly-pre-commit
-    # Tag of this repo; keep it in sync with the Pyrefly version you want.
     rev: v0.0.1
     hooks:
       - id: pyrefly-typecheck-system
